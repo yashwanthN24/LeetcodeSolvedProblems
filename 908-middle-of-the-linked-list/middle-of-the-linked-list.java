@@ -17,11 +17,12 @@ class Solution {
         ListNode slow = head ; 
         ListNode fast = head ; 
 
+        // the condition handles both even and oddlength linkedlist 
         while(fast != null && fast.next !=null){
-            slow = slow.next ; 
-            fast = fast.next.next ; 
+            slow = slow.next ; // slow -> + 1 
+            fast = fast.next.next ;  // fast -> +2 
         }
-
+        // onces fast reaches end , slow will point to the middle node 
         return slow ; 
     }
 }
