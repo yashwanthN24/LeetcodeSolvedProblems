@@ -22,22 +22,28 @@ class Solution {
         }
 
 
-
+        // empty likedlist and node number greater than linkedlist size case 
         if(head == null || n > size ){
             return head ;
         }
 
-        if(n == size ){
+
+        // deletefront case 
+        if(n == size ){ 
             head = head.next ; 
             return head ; 
         }
 
-        int i = 1 ; 
+        int i = 1 ; // i tracks the node number 
         ListNode prev = head ; 
         while(i < size - n){
             prev = prev.next ; 
             i++;
         }
+
+        // i == size-n so we reached the previous node 
+        // make it next to next to nextnodes next 
+
         prev.next = prev.next.next ; 
 
         return head;
