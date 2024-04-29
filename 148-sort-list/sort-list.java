@@ -55,6 +55,8 @@ class Solution {
             }
         }
 
+        // because this is LinkedList the right half is connected by links unlike array where we have to increment each index  
+        // so linking the righthead is enough  so if case works for all cases 
         if(left != null ){
             temp.next = left ; 
             // left = left.next ; 
