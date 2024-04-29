@@ -55,13 +55,13 @@ class Solution {
             }
         }
 
-        while(left != null ){
+        if(left != null ){
             temp.next = left ; 
             left = left.next ; 
             temp = temp.next ;
         }
 
-        while(right != null){
+        if(right != null){
             temp.next = right ;
             right = right.next ; 
             temp = temp.next ; 
