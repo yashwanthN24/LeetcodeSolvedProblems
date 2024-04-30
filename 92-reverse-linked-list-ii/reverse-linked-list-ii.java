@@ -62,22 +62,12 @@ class Solution {
 
         RightNode = temp ; 
 
-        // temp = null ; 
-
-      
-
-
-        
-
-        
+        temp = null ; 
 
         ListNode prev = null ; 
         ListNode cur = leftNode ; 
         ListNode next = null  ; 
 
-
-        
-        
         while(cur  != null){
             next = cur.next ;
             if(next == RightNode.next){
@@ -101,9 +91,9 @@ class Solution {
         leftNode.next = next  ; 
 
         if(left != 1)
-        return MainHead  ;
+            return MainHead  ;
         else
-        return RightNode ;  
+            return RightNode ;  
 
 
 
