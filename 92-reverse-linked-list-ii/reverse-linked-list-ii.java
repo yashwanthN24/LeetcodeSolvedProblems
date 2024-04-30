@@ -64,32 +64,19 @@ class Solution {
 
         temp = null ; 
 
-        // if(left == 1 ){
-        //     temp = head ; 
-        //     while(temp != null ){
-
-        //     }
-        // }
+      
 
 
         
 
-        // if(leftNode == head && RightNode == head.next && head.next.next == null ){
-        //     leftNode.next = null ; 
-        //     RightNode.next = leftNode ; 
-        //     return RightNode ; 
-        // }
+        
 
         ListNode prev = null ; 
         ListNode cur = leftNode ; 
         ListNode next = null  ; 
 
 
-        // temp = head ; 
-        // while(temp.next != null){
-        //     temp = temp.next ;
-        // }
-        // ListNode Tail = temp ; 
+        
         
         while(cur  != null){
             next = cur.next ;
