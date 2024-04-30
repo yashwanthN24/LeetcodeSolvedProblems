@@ -62,7 +62,7 @@ class Solution {
 
         RightNode = temp ; 
 
-        temp = null ; 
+        // temp = null ; 
 
       
 
