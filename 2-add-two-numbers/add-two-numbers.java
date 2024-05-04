@@ -92,3 +92,30 @@ class Solution {
 
     }
 }
+
+//  or use can use a single while loop (that handles all cases )
+
+// while(ll!= null || l2!= null || carry != 0){
+        // int val1 ;
+        // if(l1 != null)
+        //     val1 = l1.val ; 
+        
+        // int val2; 
+        // if(l2 != null)
+        //     val2 = l2.val ; 
+        
+        // int sum = carry + val1 + val2 ; 
+
+        // int digit = sum % 10 ; 
+
+        // ans = insertAtTail(ans , digit);
+
+        // carry = sum / 10 ; 
+
+        // if(l1!= null)
+        //     l1= l1.next ; 
+
+        // if(l2!=null)
+        //     l2 = l2.next ; 
+    
+// }
