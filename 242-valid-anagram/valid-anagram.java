@@ -1,4 +1,8 @@
 class Solution {
+    // Time complexity : O(n+m) n = string 1 length m = string2 length
+
+    // Space complexity O(1)
+    
     public boolean isAnagram(String str1, String str2) {
         if (str1.length() != str2.length()) {
             // System.out.println("Not a valid Anagram");
