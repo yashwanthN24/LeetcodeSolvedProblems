@@ -4,6 +4,7 @@ class Solution {
 
         StringBuilder result = new StringBuilder("");
 
+
         String directorynamesorOper[] = path.split("/");
 
         for(String dir : directorynamesorOper){
@@ -20,6 +21,7 @@ class Solution {
 
         while(!st.isEmpty()){
             result.insert(0 , st.pop()).insert(0 , '/');
+            
         }
 
 
