@@ -19,7 +19,7 @@ class Solution {
 
 
         if(board[row][col] !='.'){
-            return  helper(board , nextrow , nextcol);
+           return  helper(board , nextrow , nextcol);
         }
 
         for(char digit = '1' ; digit <='9' ; digit++){
@@ -27,13 +27,13 @@ class Solution {
                 if(isSafe(board , row , col , digit)){
                     board[row][col] = digit;
                     if(helper(board , nextrow  , nextcol)){
-                        return true;
+                        return true ;
                     }
                     board[row][col] = '.';
                 }
         }
 
-        return false ;
+        return false  ;
 
 
         
