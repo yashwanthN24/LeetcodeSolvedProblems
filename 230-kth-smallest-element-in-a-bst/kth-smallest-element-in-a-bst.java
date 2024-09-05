@@ -28,17 +28,17 @@ class Solution {
             return;
         }
 
-        // Traverse the left subtree.
+      
         inOrderTraversal(root.left, k);
 
-        // Process the current node.
+        
         count++;
         if (count == k) {
             ans = root.val;
-            return; // Stop traversal once we find the kth element.
+            return; 
         }
 
-        // Traverse the right subtree.
+        
         inOrderTraversal(root.right, k);
     }
 }
