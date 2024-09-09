@@ -20,7 +20,7 @@ class Solution {
         return count ;
 
     }
-
+    
     public void countnodes(TreeNode root){
         if(root == null){
             return ;
