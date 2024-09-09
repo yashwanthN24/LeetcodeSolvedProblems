@@ -20,7 +20,7 @@ class Solution {
         return count ;
 
     }
-    
+    // any traversal works be it inorder , preorder , postorder , but i used inorder here 
     public void countnodes(TreeNode root){
         if(root == null){
             return ;
