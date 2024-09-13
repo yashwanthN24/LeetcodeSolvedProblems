@@ -67,11 +67,14 @@ class Solution {
         prev = new TreeNode(Integer.MIN_VALUE);
         inorder(root);
 
+        // when two non adjancent nodes of inorderseqence have been swapped 2 violations we get so middle also wont be null hence logically we must place non adjacent nodes swap first before adjancent nodes swap 
         if(first!=null && last != null){
             int temp = first.val ; 
             first.val = last.val ; 
             last.val = temp ; 
-        }else if(first != null && middle != null){
+        }
+        // two adjacent nodes of inorderseqence have been swapped in this case only 1 violation so last for sure will be null 
+        else if(first != null && middle != null){
             int temp = middle.val ; 
             middle.val = first.val ; 
             first.val = temp ; 
