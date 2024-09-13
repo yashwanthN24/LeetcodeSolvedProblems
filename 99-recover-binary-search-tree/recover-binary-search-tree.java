@@ -14,6 +14,10 @@
  * }
  */
 class Solution {
+
+    // Approach 1 : Brute Force Time Complexity : O(2n) + O(nlogn) => O(nlogn)
+    // Space complexity : O(n) due to extra arrayList creation , Apart from auxillary  recursion Stack space
+
     public void recoverTree(TreeNode root) {
         ArrayList<Integer> inorderseq = new ArrayList<>();
         getInorder(root , inorderseq);
@@ -45,9 +49,9 @@ class Solution {
 
         traverseInorder(root.left , correctseq);
         if(root.val != correctseq.get(i)){
-            int temp = root.val; 
+            // int temp = root.val; 
             root.val = correctseq.get(i);
-            correctseq.set(i  , temp );
+            // correctseq.set(i  , temp );
             
         }
         i++;
