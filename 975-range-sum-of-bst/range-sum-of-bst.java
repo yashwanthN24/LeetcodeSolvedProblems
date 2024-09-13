@@ -23,8 +23,8 @@ class Solution {
         }else if(root.val < low){
             return rangeSumBST(root.right , low , high);
         }
-        // else{
+        else{
             return rangeSumBST(root.left , low , high);
-        // }
+        }
     }
 }
