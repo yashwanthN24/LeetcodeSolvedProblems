@@ -3,26 +3,26 @@ class Solution {
 
         // Approach 1 
 
-          int xor = 0;
+        //   int xor = 0;
 
-        // XOR all characters in string s
-        for (int i = 0; i < s.length(); i++) {
-            xor ^= s.charAt(i);
-        }
+        // // XOR all characters in string s
+        // for (int i = 0; i < s.length(); i++) {
+        //     xor ^= s.charAt(i);
+        // }
 
-        // XOR all characters in string t
-        for (int i = 0; i < t.length(); i++) {
-            xor ^= t.charAt(i);
-        }
+        // // XOR all characters in string t
+        // for (int i = 0; i < t.length(); i++) {
+        //     xor ^= t.charAt(i);
+        // }
 
-        // The remaining value in xor will be the ASCII value of the extra character
-        return (char) xor;
+        // // The remaining value in xor will be the ASCII value of the extra character
+        // return (char) xor;
 
 
         // Approach 2 
 
 
-        /*
+        // /*
 
         // Initialize sum variables for both strings
         int sumS = 0, sumT = 0;
@@ -44,7 +44,7 @@ class Solution {
 
 
 
-        */
+        // */
 
 
         // Approach 3
