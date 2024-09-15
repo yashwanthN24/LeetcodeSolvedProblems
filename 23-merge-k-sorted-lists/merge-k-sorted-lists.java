@@ -1,11 +1,21 @@
 /**
  * Definition for singly-linked list.
- * public class ListNode {
+ * public class ListNode implements Comparator<ListNode> {
  *     int val;
  *     ListNode next;
  *     ListNode() {}
  *     ListNode(int val) { this.val = val; }
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+
+
+        public int compare(ListNode k1, ListNode k2){
+    if (k1.val > k2.val)
+    return 1;
+    else if (k1.val < k2.val)
+    return -1;
+    return 0;
+    }
+
  * }
  */
 class Solution {
