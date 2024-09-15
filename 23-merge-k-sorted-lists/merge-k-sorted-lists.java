@@ -32,7 +32,7 @@ class Solution {
     }
 
     while (!queue.isEmpty()) {
-        ListNode curr = queue.poll();  // Get the smallest node
+        ListNode curr = queue.remove();  // Get the smallest node
         last.next = curr;  // Add it to the result list
         last = last.next;
 
