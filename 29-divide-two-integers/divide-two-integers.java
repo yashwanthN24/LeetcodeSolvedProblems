@@ -36,6 +36,6 @@ class Solution {
             return Integer.MIN_VALUE;
         }
 
-        return (int) (sign? ans : ( -ans));
+        return (int) (sign? ans : ( -1*ans));
     }
 }
